@@ -83,8 +83,10 @@ function tabCtrl(ele) {
     });
 }
 tabCtrl('.m_jmjq');
-tabCtrl('.m_zczy');
+
 tabCtrl('.m_wmfz');
+
+tabCtrl('.m_zczy');
 
 // 导航
 $('.bar li.icon').click(function(){

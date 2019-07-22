@@ -3,7 +3,9 @@ html,body{
   width:100%;
   height:100%;
   min-width: 1200px;
-   overflow: hidden;
+  max-width:1920px;
+  min-height: 800px;
+  overflow: hidden;
 }
 .music{
   display: inline-block;
@@ -280,7 +282,8 @@ html,body{
       top:200px;
       width:800px;
       left:50%;
-      margin-left:-400px;
+      margin-left:-450px;
+      padding:0 50px;
      ol{
        display: flex;
        justify-content: space-between;
@@ -369,16 +372,7 @@ html,body{
        }
        
      }
-     .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
-       width:54px;
-       height:102px;
-      background: url(../images/left.png)no-repeat center;
-    }
-    .swiper-button-next{
-      width:54px;
-      height:102px;
-     background: url(../images/right.png)no-repeat center;
-   }
+
    .swiper-container4{
     width:700px;
     margin:20px auto 0;
@@ -436,6 +430,16 @@ html,body{
       }
     }
   }
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    width:54px;
+    height:102px;
+   background: url(../images/left.png)no-repeat center;
+ }
+ .swiper-button-next{
+   width:54px;
+   height:102px;
+  background: url(../images/right.png)no-repeat center;
+}
   .show{
     display:none;
   }

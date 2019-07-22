@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>国家大剧院制作普契尼歌剧《西部女郎》</title>
+  <script>
+      function IsPC() {
+          var userAgentInfo = navigator.userAgent;
+          var Agents = ["Android", "iPhone",
+              "SymbianOS", "Windows Phone",
+              "iPad", "iPod"];
+          var flag = true;
+          for (var v = 0; v < Agents.length; v++) {
+              if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                  flag = false;
+                  break;
+              }
+          }
+          return flag;
+      }
+      if (IsPC()) {
+          // 跳转到电脑板的网址
+          window.location.href = '../index.html';
+      }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

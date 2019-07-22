@@ -3,6 +3,8 @@ body {
   width: 100%;
   height: 100%;
   min-width: 1200px;
+  max-width: 1920px;
+  min-height: 800px;
   overflow: hidden;
 }
 .music {
@@ -276,7 +278,8 @@ body {
   top: 200px;
   width: 800px;
   left: 50%;
-  margin-left: -400px;
+  margin-left: -450px;
+  padding: 0 50px;
 }
 .inner .m_zczy .des ol {
   display: flex;
@@ -365,17 +368,6 @@ body {
   font-size: 24px;
   bottom: 0;
 }
-.inner .m_wmfz .des .swiper-button-prev,
-.inner .m_wmfz .des .swiper-container-rtl .swiper-button-next {
-  width: 54px;
-  height: 102px;
-  background: url(../images/left.png) no-repeat center;
-}
-.inner .m_wmfz .des .swiper-button-next {
-  width: 54px;
-  height: 102px;
-  background: url(../images/right.png) no-repeat center;
-}
 .inner .m_wmfz .des .swiper-container4 {
   width: 700px;
   margin: 20px auto 0;
@@ -430,6 +422,17 @@ body {
 .inner .m_mtzs ul li p strong {
   float: right;
   font-weight: normal;
+}
+.inner .swiper-button-prev,
+.inner .swiper-container-rtl .swiper-button-next {
+  width: 54px;
+  height: 102px;
+  background: url(../images/left.png) no-repeat center;
+}
+.inner .swiper-button-next {
+  width: 54px;
+  height: 102px;
+  background: url(../images/right.png) no-repeat center;
 }
 .inner .show {
   display: none;
