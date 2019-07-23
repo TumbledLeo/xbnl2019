@@ -1,0 +1,57 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: PingFang-SC-Heavy;
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+@media (width: 320px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media (width: 360px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media (width: 375px) {
+  html {
+    font-size: 37.5px;
+  }
+}
+@media (width: 414px) {
+  html {
+    font-size: 41.4px;
+  }
+}
+@media (width: 412px) {
+  html {
+    font-size: 41.2px;
+  }
+}
+@media (width: 750px) {
+  html {
+    font-size: 75px;
+  }
+}
+@media (width: 768px) {
+  html {
+    font-size: 76.8px;
+  }
+}
+.music.play {
+  animation: music_run 3s infinite linear;
+}
+@keyframes music_run {
+  0% {
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}

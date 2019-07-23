@@ -61,8 +61,8 @@ $(function(){
             console.log(6);
         }
     }); 
-// tab切换
-function tabCtrl(ele) {
+    // tab切换
+  function tabCtrl(ele) {
     $(ele + ' .tabContents .tabContent').hide().eq(0).show();
     $(ele + ' .tabs .tab').eq(0).addClass('active');
     $(ele + ' .tabs .tab').click(function (e) {
@@ -81,44 +81,5 @@ function tabCtrl(ele) {
         });
         $(ele + ' .tabContents .tabContent').hide().eq(index).fadeIn();
     });
-}
-tabCtrl('.m_jmjq');
-
-tabCtrl('.m_wmfz');
-
-tabCtrl('.m_zczy');
-
-// 导航
-$('.bar li.icon').click(function(){
-    $('.nav li').eq($(this).index()).addClass('active').siblings().removeClass('active');
-    $('.wrap').fadeIn();
-    $('.inner .show').eq($(this).index()-1).slideDown();
-  });
-  $('.nav li').click(function(){
-    $(this).addClass('active').siblings().removeClass('active');
-
-    if($(this).index()==0){
-        return;
-    }else{
-        $('.wrap').fadeIn();
-        $('.inner .show').eq($(this).index()-1).slideDown();
-    }
-  });
-$('.close').click(function(){
-    $('.inner .show').slideUp();
-    $('.wrap').fadeOut();
-});
-
-  var flag=true;
-  $('.bar1').click(function(){
-    if(flag){
-      $('.nav').slideDown();
-      flag=false;
-    }else{
-      
-      $('.nav').slideUp();
-      flag=true;
-    }
-    
-  });
+  }
 });

@@ -413,10 +413,7 @@
         $('.banner').fadeOut();
       },1000)
     });
-
-
-    var mySwiper0 = new Swiper('.swiper-container1', {
-      
+    var mySwiper0 = new Swiper('.swiper-container1', { 
       observer:true,//修改swiper自己或子元素时，自动初始化swiper
       observeParents:true,//修改swiper的父元素时，自动初始化swiper
      // autoplay: true,//可选选项，自动滑动
@@ -426,7 +423,6 @@
       stopOnLastSlide: false,
       disableOnInteraction: false,
       },
-   
       navigation: {
         nextEl: '.swiper-button-next1',
         prevEl: '.swiper-button-prev1',
@@ -434,7 +430,6 @@
     })
     $('.zhuy').click(function(){
       mySwiper0.slideTo(1);
- 
       // mySwiper0.startAutoplay();
     });
     var mySwiper1 = new Swiper('.swiper-container2', {
