@@ -57,3 +57,376 @@ a{
         transform: rotateZ(360deg);
     }
 }
+html,body{
+  position: relative;
+width:100%;
+height:100%;
+}
+.banner{
+  position: relative;
+  width:100%;
+  height:100%;
+  background:url(../images/banner.jpg)no-repeat center;
+  background-size: cover;
+  z-index:9;
+  .tit{
+    position: absolute;
+    bottom:200/75rem;
+    width:430/75rem;
+    left:50%;
+    margin-left:-215/75rem;
+  }
+  .enter{
+    position: absolute;
+    bottom:20/75rem;
+    left:20rem/75;
+    width:336/75rem;
+    img{
+      width:100%
+    }
+  }
+  .buy{
+    width:284/75rem;
+    position: absolute;
+    bottom:20/75rem;
+    right:40rem/75;
+    
+    img{
+      width:100%;
+    }
+  }
+  .open{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display: none;
+    bottom:0;
+    background:url(../images/open.png)no-repeat center;
+    background-size: cover;
+  }
+}
+.main{
+  position: fixed;top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  .swiper-container1{
+    width:100%;
+    height:100%;
+    background: #000000;
+  }
+  .show{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    .des{
+      width:100%;
+      height:100%;
+      position: absolute;
+      background:rgba(0, 0, 0, 0.8);
+      z-index:9;
+      .close{
+        position: absolute;
+        top:300rem/75;
+        right:60rem/75;
+        width:33/75rem;
+        img{
+          width:100%;
+        }
+      }
+    }
+  }
+  .down{
+    width:69rem/75;
+    height:69rem/75;
+    // background:url(../images/down.png)no-repeat center;
+    // background-size: cover;
+    position: absolute;
+    top:180rem/75;
+    left:50%;
+    margin-left:-35/75rem;
+    animation: down_run .6s infinite linear alternate;
+  }
+  @keyframes down_run{
+    0% {
+      top:180rem/75;
+      }
+      100% {
+         top:200rem/75;
+      }
+  }
+  .jdcd{
+    background:url(../images/jdcd_bg.jpg)no-repeat center;
+    background-size: cover;
+    .jdcd_c{
+      width:100%;
+      height:1126rem/75;
+      background:url(../images/jdcd.png)no-repeat center top;
+      background-size: cover;
+      .more{
+        margin:0 auto 0;
+        padding-top:400rem/75;
+        .moc{
+          width:660rem/75;
+          margin:0 auto;
+          li{
+            background:url(../images/video.png)no-repeat left;
+            background-size: 46rem/75;
+          }
+          li.active{
+            background:url(../images/video_icon1.png)no-repeat left;
+            background-size: 46rem/75;
+          }
+        }
+        p{
+          font-size: 30rem/75;
+          color:#ea7659;
+          line-height: 110rem/75;
+          text-indent:60rem/75;
+          
+        }
+      }
+    }
+  }
+  .jmjq{
+    background:url(../images/jmjq_bg.jpg)no-repeat center;
+    background-size: cover;
+    .jmjq_c{
+      width:100%;
+      height:1270rem/75;
+      background:url(../images/jmjq.png)no-repeat center top;
+      background-size: cover;
+      .more{
+        margin:0 auto 0;
+        padding-top:400rem/75;
+        ol{
+          font-size: 36rem/75;
+          color:#ea7659;
+          width:600rem/75;
+          display: flex;
+          justify-content: space-between;
+          margin:0 auto;
+          li{
+          line-height: 100rem/75;
+          width:136px;
+          text-align: center;
+         
+          }
+          li.active{
+            background:url(../images/bang.png)no-repeat bottom;
+          }
+        }
+        .tabContents{
+          height:650rem/65;
+          overflow-y: hidden;
+          width:84%;
+
+          margin:0 auto;
+          .swiper-container4 {
+            width: 100%;
+            height: 100%;
+        }
+          .swiper-slide {
+            overflow: auto;
+          -webkit-overflow-scrolling: touch; 
+          }
+        }
+        ul{
+          
+          h5{
+            font-size: 30rem/75;
+            color:#ea7659;
+          }
+          p{
+            font-size: 24rem/75;
+            color:#ea7659;
+          }
+        }
+      }
+    }
+  }
+  .wmfz{
+    background:url(../images/wmfz_bg.jpg)no-repeat center;
+    background-size: cover;
+    .wmfz_c{
+      width:100%;
+      height:1126rem/75;
+      background:url(../images/wmfz.png)no-repeat center top;
+      background-size: cover;
+      .more{
+        margin:0 auto 0;
+        padding-top:370rem/75;
+        ol{
+          display: flex;
+          justify-content: space-between;
+          width:260rem/75;
+          margin:0 auto;
+          li{
+            font-size: 36rem/75;
+            color:#ea7659;
+            line-height:100rem/75;
+            width:100rem/75;
+            text-align: center;
+            letter-spacing: 2px;
+          }
+          li.active{
+            background:url(../images/bang.png)no-repeat center bottom;
+          }
+        }
+        .swiper-container2{
+          width:590rem/75;
+          margin-top:40rem/75;
+          padding-bottom:140rem/75;
+          img{
+            width:100%;
+          }
+        }
+        .swiper-pagination{
+          font-size: 24rem/75;
+          color:#ea7659;
+        }
+        .swiper-button-next, .swiper-button-prev{
+          top:98%;
+          width:30rem/75;
+          height:52rem/75;
+        }
+        .swiper-button-next{
+          background:url(../images/right.png)no-repeat center;
+          background-size: cover;
+          right:160rem/75;
+        }
+        .swiper-button-prev{
+          background:url(../images/left.png)no-repeat center;
+          background-size: cover;
+          left:160rem/75;
+        }
+        .swiper-container3{
+          width:590rem/75;
+          margin-top:40rem/75;
+          padding-bottom:140rem/75;
+          text-align: center;
+          img{
+            width:385rem/75;
+            margin:0 auto;
+          }
+        }
+        .swiper-button-next3, .swiper-button-prev3{
+          top:88%;
+          width:30rem/75;
+          height:52rem/75;
+        }
+        .swiper-pagination3{
+          bottom:44px;
+        }
+      }
+    }
+  }
+  .zczy{
+    background:url(../images/zczy_bg.jpg)no-repeat center;
+    background-size: cover;
+    .zczy_c{
+      width:100%;
+      height:1270rem/75;
+      background:url(../images/zczy.png)no-repeat center top;
+      background-size: cover;
+      .more{
+        margin:0 auto 0;
+        padding-top:400rem/75;
+        ol{
+          font-size: 36rem/75;
+          color:#ea7659;
+          width:400rem/75;
+          display: flex;
+          justify-content: space-between;
+          margin:0 auto;
+          li{
+          line-height: 100rem/75;
+          width:136px;
+          text-align: center;
+         
+          }
+          li.active{
+            background:url(../images/bang.png)no-repeat bottom;
+          }
+        }
+      }
+    }
+  }
+  .logo{
+    width:100%;
+    height:96rem/75;
+    background:rgba(0,0,0,0.6);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:10;
+    .nav{
+      position: absolute;
+      left:20rem/75;
+      top:0;
+      width:48rem/75;
+      
+      img{
+        width:100%;
+      }
+    }
+    .music_bg{
+      position: absolute;
+      right:20rem/75;
+      top:24rem/75;
+      width:52rem/75;
+      height:52rem/75;
+      display: block;
+      img{
+        width:100%;
+        position: absolute;
+        top:0;
+        left:0;
+      }
+    }
+    .logo{
+      position: absolute;
+      top:0;
+      left:50%;
+      width:298rem/75;
+      margin-left:-149/75rem;
+      img{
+        width:100%;
+      }
+    }
+  }
+}
+.nav_list{
+  z-index:11;
+  width:100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.8);
+  display:none;
+  .cl{
+    width:33rem/75;
+    height:35rem/75;
+    background:url(../images/close.png)no-repeat center;
+    background-size: cover;
+    position: absolute;
+    right:40rem/75;
+    top:100rem/75;
+  }
+  ul{
+    width:90%;
+    margin:230rem/75 auto 0;
+    li{
+      line-height: 130rem/75;
+      text-align: center;
+      a{
+        font-size: 48rem/75;
+        color:#ea7659;
+      }
+    }
+  }
+}

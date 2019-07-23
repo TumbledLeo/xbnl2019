@@ -82,4 +82,37 @@ $(function(){
         $(ele + ' .tabContents .tabContent').hide().eq(index).fadeIn();
     });
   }
+  tabCtrl('.wmfz_c');
+  tabCtrl('.jmjq_c');
+  tabCtrl('.zczy_c');
+  $('.close').click(function(){
+      $(this).parents('.des').slideUp();
+
+  });
+  $('.down').click(function(){
+      $(this).next('.des').slideDown();
+  });
+            
+            var startY = 0;
+            document.addEventListener("touchstart",function(e){
+                startY = e.changedTouches[0].pageY;
+            },false);
+            document.addEventListener("touchend",function(e){
+                    var endY = e.changedTouches[0].pageY;
+                    var changeVal = endY - startY;
+                    if(endY < startY){//向上滑
+                        //alert("向上滑");
+                    }else if(endY > startY){//向下滑
+                       $('.down').next('.des').slideDown();
+                    }else{
+                        //alert("没有偏移");
+                    }
+                },false);
+    $('.cl').click(function(){
+        $('.nav_list').slideUp();
+    });
+    $('.nav').click(function(){
+        $('.nav_list').slideDown();
+    });
+    
 });

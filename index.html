@@ -419,15 +419,12 @@
       observeParents:true,//修改swiper的父元素时，自动初始化swiper
      // autoplay: true,//可选选项，自动滑动
      loop:true,
-     autoplay: {
-      delay: 3000,
-      stopOnLastSlide: false,
-      disableOnInteraction: false,
-      },
+     
       navigation: {
         nextEl: '.swiper-button-next1',
         prevEl: '.swiper-button-prev1',
       },
+      loop:true
     })
     $('.zhuy').click(function(){
       mySwiper0.slideTo(1);
@@ -437,6 +434,7 @@
       autoplay: false,//可选选项，自动滑动
       observer:true,//修改swiper自己或子元素时，自动初始化swiper
       observeParents:true,//修改swiper的父元素时，自动初始化swiper
+      
     })
     var mySwiper2 = new Swiper('.swiper-container3',{
       observer:true,//修改swiper自己或子元素时，自动初始化swiper
@@ -452,6 +450,7 @@
         nextEl: '.swiper-button-next3',
         prevEl: '.swiper-button-prev3',
       },
+      loop:true
     })
     var mySwiper4 = new Swiper('.swiper-container4',{
       observer:true,//修改swiper自己或子元素时，自动初始化swiper
@@ -467,6 +466,7 @@
         nextEl: '.swiper-button-next4',
         prevEl: '.swiper-button-prev4',
       },
+      loop:true
     })
   });
   </script>
