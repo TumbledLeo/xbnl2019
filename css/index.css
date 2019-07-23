@@ -186,6 +186,9 @@ body {
   width: 40px;
   height: 40px;
 }
+.inner .m_jdcd .des {
+  opacity: 0;
+}
 .inner .m_jdcd ul {
   position: absolute;
   top: 270px;
@@ -223,6 +226,7 @@ body {
   height: 40px;
 }
 .inner .m_jmjq .des {
+  opacity: 0;
   position: absolute;
   top: 200px;
   width: 920px;
@@ -253,6 +257,7 @@ body {
   letter-spacing: 2px;
   color: #ea7659;
   font-weight: normal;
+  line-height: 45px;
 }
 .inner .m_jmjq .des ul p {
   text-indent: 2em;
@@ -274,6 +279,7 @@ body {
   height: 40px;
 }
 .inner .m_zczy .des {
+  opacity: 0;
   position: absolute;
   top: 200px;
   width: 800px;
@@ -330,6 +336,7 @@ body {
   height: 40px;
 }
 .inner .m_wmfz .des {
+  opacity: 0;
   position: absolute;
   top: 200px;
   width: 900px;
@@ -394,6 +401,9 @@ body {
   right: 30px;
   width: 40px;
   height: 40px;
+}
+.inner .m_mtzs .des {
+  opacity: 0;
 }
 .inner .m_mtzs ul {
   position: absolute;

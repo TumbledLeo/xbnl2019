@@ -92,7 +92,7 @@ tabCtrl('.m_zczy');
 $('.bar li.icon').click(function(){
     $('.nav li').eq($(this).index()).addClass('active').siblings().removeClass('active');
     $('.wrap').fadeIn();
-    $('.inner .show').eq($(this).index()-1).slideDown();
+    $('.inner .show').eq($(this).index()-1).slideDown().find('.des').animate({"opacity":"1"},2000);
   });
   $('.nav li').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
@@ -100,13 +100,14 @@ $('.bar li.icon').click(function(){
     if($(this).index()==0){
         return;
     }else{
-        $('.wrap').fadeIn();
-        $('.inner .show').eq($(this).index()-1).slideDown();
+        $('.wrap').fadeIn().css('opacity',"0");
+        $('.inner .show').eq($(this).index()-1).slideDown().find('.des').animate({"opacity":"1"},2000);
     }
   });
 $('.close').click(function(){
     $('.inner .show').slideUp();
     $('.wrap').fadeOut();
+    $('.inner .show').find('.des').animate({"opacity":"0"},1000);
 });
 
   var flag=true;
