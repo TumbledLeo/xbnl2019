@@ -27,9 +27,19 @@ a {
     font-size: 41.4px;
   }
 }
+@media (width: 415px) {
+  html {
+    font-size: 41.5px;
+  }
+}
 @media (width: 412px) {
   html {
     font-size: 41.2px;
+  }
+}
+@media (width: 413px) {
+  html {
+    font-size: 41.3px;
   }
 }
 @media (width: 750px) {
@@ -140,20 +150,21 @@ body {
   width: 100%;
 }
 .main .down {
+  display: block;
   width: 0.92rem;
   height: 0.92rem;
   position: absolute;
-  top: 2.4rem;
+  top: 100px;
   left: 50%;
   margin-left: -0.46666667rem;
   animation: down_run .6s infinite linear alternate;
 }
 @keyframes down_run {
   0% {
-    top: 2.4rem;
+    top: 100px;
   }
   100% {
-    top: 2.66666667rem;
+    top: 120px;
   }
 }
 .main .jdcd {
@@ -197,10 +208,11 @@ body {
   height: 16.93333333rem;
   background: url(../images/jmjq.png) no-repeat center top;
   background-size: cover;
+  margin-top: -0.8rem;
 }
 .main .jmjq .jmjq_c .more {
   margin: 0 auto 0;
-  padding-top: 5.33333333rem;
+  padding-top: 4.53333333rem;
 }
 .main .jmjq .jmjq_c .more ol {
   font-size: 0.48rem;
@@ -208,7 +220,7 @@ body {
   width: 8rem;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 auto 0.4rem;
 }
 .main .jmjq .jmjq_c .more ol li {
   line-height: 1.33333333rem;
@@ -242,6 +254,7 @@ body {
   color: #ea7659;
   text-indent: 2em;
   line-height: 0.53333333rem;
+  text-align: justify;
 }
 .main .wmfz {
   background: url(../images/wmfz_bg.jpg) no-repeat center;
@@ -324,12 +337,14 @@ body {
 .main .zczy {
   background: url(../images/zczy_bg.jpg) no-repeat center;
   background-size: cover;
+  min-height: 670px;
 }
 .main .zczy .zczy_c {
   width: 100%;
   height: 16.93333333rem;
   background: url(../images/zczy.png) no-repeat center top;
   background-size: cover;
+  margin-top: -0.8rem;
 }
 .main .zczy .zczy_c .more {
   margin: 0 auto 0;
@@ -356,27 +371,28 @@ body {
   left: 50%;
   margin-left: -4rem;
 }
-.main .zczy .zczy_c .wrapper {
+.main .zczy .zczy_c #wrapper3 {
   position: relative;
   overflow: hidden;
   height: 10.66666667rem;
   width: 8.53333333rem;
   margin: 0.53333333rem auto 0;
 }
-.main .zczy .zczy_c .wrapper ul {
+.main .zczy .zczy_c #wrapper3 ul {
   display: flex;
   justify-content: space-between;
   height: 10.8rem;
   flex-wrap: wrap;
+  padding-bottom: 1.33333333rem;
 }
-.main .zczy .zczy_c .wrapper ul li {
+.main .zczy .zczy_c #wrapper3 ul li {
   width: 4.13333333rem;
   text-align: center;
 }
-.main .zczy .zczy_c .wrapper ul li img {
+.main .zczy .zczy_c #wrapper3 ul li img {
   width: 2rem;
 }
-.main .zczy .zczy_c .wrapper ul li p {
+.main .zczy .zczy_c #wrapper3 ul li p {
   font-size: 0.32rem;
   color: #ea7659;
 }
@@ -482,7 +498,7 @@ body {
   overflow: hidden;
   height: 9.86666667rem;
   width: 8.53333333rem;
-  margin: 0.53333333rem auto 0;
+  margin: 0 auto ;
 }
 #wrapper ul {
   height: 18.66666667rem;

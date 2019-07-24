@@ -54,7 +54,7 @@
       <div class="banner">
         <img src="images/title.png" alt="" class="tit">
         <a href="javascript:;" class="enter"><img src="images/enter.png" alt=""></a>
-        <a href="" class="buy"><img src="images/buy.png" alt=""></a>
+        <a href="http://ticket.chncpa.org/product-1062467.html" class="buy"><img src="images/buy.png" alt=""></a>
         <div class="open"></div>
       </div>
       <div class="main">
@@ -107,9 +107,9 @@
                                         <ul>
                                             <li>
                                                 <h5>老年人在家乡 Che faranno i vecchi miei </h5>
-                                                <p>第一幕开始不久，游吟诗人华莱士站在门外，怀抱吉他唱出一曲《老年人在家乡》，这是一首男中音的思乡曲，歌声动人，唱到了故乡望眼欲穿的长辈，老母亲，如果自己永远不能回去，他们该多么悲伤。音乐沉重，有着普契尼的男中音咏叹调风格，弦乐伴奏的坚定的节奏型还提醒了矿上的生活。舞台上许多人都流下眼泪，附和他的歌声，有人也想到了老母亲，还有人想到自己忠实的狗，自己水岸边的房屋……虽然华莱士只是剧中次要角色，但这首咏叹调却意味深长：许多人认为，这首歌中“我再也不能回到家乡”暗喻了最终的结局，因为最终矿工们合唱是“你们再也不能回到这里”。</p>
+                                                <p>第一幕开始不久，游吟诗人华莱士站在门外，怀抱吉他唱出一曲《老年人在家乡》,这是一首男中音的思乡曲，歌声动人,唱到了故乡望眼欲穿的长辈，老母亲，如果自己永远不能回去，他们该多么悲伤。音乐沉重，有着普契尼的男中音咏叹调风格，弦乐伴奏的坚定的节奏型还提醒了矿上的生活。舞台上许多人都流下眼泪，附和他的歌声，有人也想到了老母亲，还有人想到自己忠实的狗,自己水岸边的房屋……虽然华莱士只是剧中次要角色，但这首咏叹调却意味深长：许多人认为,这首歌中“我再也不能回到家乡”暗喻了最终的结局,因为最终矿工们合唱是“你们再也不能回到这里”。</p>
                                                 <h5>明妮，打从我离开家  Minnie, dalla mia casa son partito</h5>
-                                                <p>众人散去，舞台上只剩兰斯和明妮。这一大段咏叹调和二重唱是普契尼招牌式的大段对手戏，只不过这里是男中音和女高音。一段简短的宣叙调中，兰斯向明妮求爱，可是明妮却加以婉拒。这时，兰斯唱出：“明妮，打从我离开家”，他说自己虽然被黄金的魅力所左右，也曾沉溺在豪赌中，并宣称从未真正爱过，如今最急切想得到的是明妮的亲吻。这段热烈的告白，是用朗诵般的咏叹调写成的，最后一句点睛之笔“为了获得你的一个吻，我对财富在所不惜”，定音鼓奏出的强音生动地刻画出这位警官的人物性格。
+                                                <p>众人散去，舞台上只剩兰斯和明妮。这一大段咏叹调和二重唱是普契尼招牌式的大段对手戏,只不过这里是男中音和女高音。一段简短的宣叙调中,兰斯向明妮求爱,可是明妮却加以婉拒。这时,兰斯唱出：“明妮,打从我离开家”,他说自己虽然被黄金的魅力所左右，也曾沉溺在豪赌中,并宣称从未真正爱过，如今最急切想得到的是明妮的亲吻。这段热烈的告白,是用朗诵般的咏叹调写成的,最后一句点睛之笔“为了获得你的一个吻,我对财富在所不惜”,定音鼓奏出的强音生动地刻画出这位警官的人物性格。
                                                 </p>
                                                 <h5>幼年时在索列达德 Laggiu nel Soledad</h5>
                                                 <p>听过这些话后，明妮唱出了歌曲:“幼年时在索列达德”,回忆起童年恶劣的居住条件,双亲在酒吧忙碌和玩牌的画面,感叹父母如此相爱,随后表示自己也一直在等待真正相爱的男人,实际上是婉拒了求爱。咏叹调有典型的普契尼风格,旋律线悠长优美,展现了抒情女高音的魅力。</p>
@@ -148,7 +148,7 @@
                               </ol>
                               <ul class="tabContents">
                                 <li class="tabContent ">
-                                  <div class="wrapper">
+                                  <div class="wrapper" id="wrapper3">
                                     <ul>
                                         <li>
                                             <img src="../images/zc1.png" alt="">
@@ -180,6 +180,7 @@
                                                       <p>萨尔瓦托雷·卡普托</p>
                                                       <p>合唱指挥</p>
                                                     </li>
+                                                    
                                     </ul>
                                   </div>
                                 </li>
@@ -413,6 +414,13 @@ $(function(){
         $('.banner').fadeOut();
       },4000)
   });
+  $('.banner').click(function(){
+    $('.open').fadeIn(3000);
+      setTimeout(function(){
+        $('.banner').fadeOut();
+      },4000)
+  });
+  
 
 var mySwiper1 = new Swiper('.swiper-container1', {
   autoplay: false,//可选选项，自动滑动
@@ -423,6 +431,7 @@ $('.nav_list li.list').click(function(){
   $('.nav_list').slideUp();
   console.log($(this).index());
   mySwiper1.slideTo($(this).index()-1, 1000, false);
+  $('.des').slideDown();
 });
  var mySwiper2 = new Swiper('.wm .swiper-container2', {
    autoplay: false,//可选选项，自动滑动
@@ -472,7 +481,12 @@ var myScroll1 = new IScroll('#wrapper2', {
     interactiveScrollbars:true,
     //resizeScrollbars: false,//大小固定
 });
-
+var myScroll1 = new IScroll('#wrapper3', {
+//  scrollbars: true,
+  scrollbars: 'custom',
+    interactiveScrollbars:true,
+    //resizeScrollbars: false,//大小固定
+});
 });
 </script>
 </body>
