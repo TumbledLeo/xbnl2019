@@ -84,7 +84,7 @@ $(function(){
   }
   tabCtrl('.wmfz_c');
   tabCtrl('.jmjq_c');
-  tabCtrl('.zczy_c');
+
   $('.close').click(function(){
       $(this).parents('.des').slideUp();
 
@@ -114,5 +114,26 @@ $(function(){
     $('.nav').click(function(){
         $('.nav_list').slideDown();
     });
-    
+
+    function tabCtrl1(ele) {
+        $(ele + ' .tabContents .tabContent').css('visibility','hidden').eq(0).css('visibility','visible');
+        $(ele + ' .tabs .tab').eq(0).addClass('active');
+        $(ele + ' .tabs .tab').click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            if ($(this).hasClass('active')) {
+                return;
+            }
+            $(this).addClass('active').siblings().removeClass('active');
+            var me = $(this);
+            var index = 0;
+            $(ele + ' .tabs .tab').each(function (i) {
+                if (me.get(0) === $(this).get(0)) {
+                    index = i;
+                }
+            });
+            $(ele + ' .tabContents .tabContent').css('visibility','hidden').eq(index).css('visibility','visible');
+        });
+      }
+      tabCtrl1('.zczy_c');
 });

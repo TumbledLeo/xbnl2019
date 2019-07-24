@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      #wrapper{
+    position: relative;
+    overflow: hidden;
+    height:400px;
+    width:100%;
+    display: none;
+      }
+      #wrapper ul{
+        height:1000px;
+      }
+      </style>
+</head>
+<body>
+    <div id="wrapper">
+        <ul>
+            <li>
+                <h5>老年人在家乡 Che faranno i vecchi miei </h5>
+                <p>第一幕开始不久，游吟诗人华莱士站在门外，怀抱吉他唱出一曲《老年人在家乡》，这是一首男中音的思乡曲，歌声动人，唱到了故乡望眼欲穿的长辈，老母亲，如果自己永远不能回去，他们该多么悲伤。音乐沉重，有着普契尼的男中音咏叹调风格，弦乐伴奏的坚定的节奏型还提醒了矿上的生活。舞台上许多人都流下眼泪，附和他的歌声，有人也想到了老母亲，还有人想到自己忠实的狗，自己水岸边的房屋……虽然华莱士只是剧中次要角色，但这首咏叹调却意味深长：许多人认为，这首歌中“我再也不能回到家乡”暗喻了最终的结局，因为最终矿工们合唱是“你们再也不能回到这里”。</p>
+                <h5>明妮，打从我离开家  Minnie, dalla mia casa son partito</h5>
+                <p>众人散去，舞台上只剩兰斯和明妮。这一大段咏叹调和二重唱是普契尼招牌式的大段对手戏，只不过这里是男中音和女高音。一段简短的宣叙调中，兰斯向明妮求爱，可是明妮却加以婉拒。这时，兰斯唱出：“明妮，打从我离开家”，他说自己虽然被黄金的魅力所左右，也曾沉溺在豪赌中，并宣称从未真正爱过，如今最急切想得到的是明妮的亲吻。这段热烈的告白，是用朗诵般的咏叹调写成的，最后一句点睛之笔“为了获得你的一个吻，我对财富在所不惜”，定音鼓奏出的强音生动地刻画出这位警官的人物性格。
+                </p>
+                <h5>幼年时在索列达德 Laggiu nel Soledad</h5>
+                <p>听过这些话后，明妮唱出了歌曲:“幼年时在索列达德”,回忆起童年恶劣的居住条件,双亲在酒吧忙碌和玩牌的画面,感叹父母如此相爱,随后表示自己也一直在等待真正相爱的男人,实际上是婉拒了求爱。咏叹调有典型的普契尼风格,旋律线悠长优美,展现了抒情女高音的魅力。</p>
+            </li>
+        </ul>
+    </div>
+    <button></button>
+    <script src="lib/jquery-3.2.1.min.js"></script>
+    <script src="lib/iscroll-probe.js"></script>
+    <script>
+  
+//var myScroll = new IScroll('#wrapper');
+$('button').click(function(){
+  $('#wrapper').fadeIn()
+  var myScroll = new IScroll('#wrapper', {
+  scrollbars: true,
+  //scrollbars: 'custom',
+    interactiveScrollbars:true,
+    //resizeScrollbars: false,//大小固定
+});
+});
+    </script>
+ 
+</body>
+</html>

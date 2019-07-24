@@ -235,10 +235,13 @@ body {
 .main .jmjq .jmjq_c .more ul h5 {
   font-size: 0.4rem;
   color: #ea7659;
+  line-height: 0.8rem;
 }
 .main .jmjq .jmjq_c .more ul p {
   font-size: 0.32rem;
   color: #ea7659;
+  text-indent: 2em;
+  line-height: 0.53333333rem;
 }
 .main .wmfz {
   background: url(../images/wmfz_bg.jpg) no-repeat center;
@@ -330,7 +333,7 @@ body {
 }
 .main .zczy .zczy_c .more {
   margin: 0 auto 0;
-  padding-top: 5.33333333rem;
+  padding-top: 4.53333333rem;
 }
 .main .zczy .zczy_c .more ol {
   font-size: 0.48rem;
@@ -347,6 +350,35 @@ body {
 }
 .main .zczy .zczy_c .more ol li.active {
   background: url(../images/bang.png) no-repeat bottom;
+}
+.main .zczy .zczy_c .more ul li.tabContent {
+  position: absolute;
+  left: 50%;
+  margin-left: -4rem;
+}
+.main .zczy .zczy_c .wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 10.66666667rem;
+  width: 8.53333333rem;
+  margin: 0.53333333rem auto 0;
+}
+.main .zczy .zczy_c .wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  height: 10.8rem;
+  flex-wrap: wrap;
+}
+.main .zczy .zczy_c .wrapper ul li {
+  width: 4.13333333rem;
+  text-align: center;
+}
+.main .zczy .zczy_c .wrapper ul li img {
+  width: 2rem;
+}
+.main .zczy .zczy_c .wrapper ul li p {
+  font-size: 0.32rem;
+  color: #ea7659;
 }
 .main .logo {
   width: 100%;
@@ -420,4 +452,63 @@ body {
 .nav_list ul li a {
   font-size: 0.64rem;
   color: #ea7659;
+}
+#wrapper2 {
+  position: relative;
+  overflow: hidden;
+  height: 9.86666667rem;
+  width: 8.53333333rem;
+  margin: 0.53333333rem auto 0;
+}
+#wrapper2 ul {
+  display: flex;
+  justify-content: space-between;
+  height: 32.4rem;
+  flex-wrap: wrap;
+}
+#wrapper2 ul li {
+  width: 4.13333333rem;
+  text-align: center;
+}
+#wrapper2 ul li img {
+  width: 2rem;
+}
+#wrapper2 ul li p {
+  font-size: 0.32rem;
+  color: #ea7659;
+}
+#wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 9.86666667rem;
+  width: 8.53333333rem;
+  margin: 0.53333333rem auto 0;
+}
+#wrapper ul {
+  height: 18.66666667rem;
+}
+#wrapper ul li h5 {
+  line-height: 0.8rem;
+  width: 95%;
+}
+#wrapper ul li p {
+  font-size: 0.32rem;
+  color: #ea7659;
+  text-indent: 2em;
+  line-height: 0.53333333rem;
+  width: 95%;
+}
+.iScrollVerticalScrollbar {
+  background: #f27a5c;
+  width: 4px;
+  height: 9.86666667rem;
+  position: absolute;
+  right: 4px;
+  top: 0;
+  overflow: scroll;
+}
+.iScrollVerticalScrollbar .iScrollIndicator {
+  height: 40px;
+  width: 6px;
+  background: #82311d;
 }
