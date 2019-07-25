@@ -139,14 +139,14 @@ $(function(){
           $('.navbar').fadeIn();
       });
       $('.navbar li').click(function(){
-            $('.big .show').eq($(this).index()).animate({"top":'0'},1000);
+        $('.big .show').css("top",'-150%').eq($(this).index()).animate({"top":'0'},1000);
       });
       $('.close').click(function(){
-        $('.big .show').animate({"top":'-100%'},1000);
+        $('.big .show').animate({"top":'-150%'},1000);
         });
     $('.nav_list li.list').click(function(){
         $('.nav_list').slideUp();
        console.log($(this).index());
-       $('.big .show').eq($(this).index()-1).animate({"top":'0'},1000);
+       $('.big .show').css("top",'-150%').eq($(this).index()-1).animate({"top":'0'},1000);
       });
 });

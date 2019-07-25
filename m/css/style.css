@@ -126,6 +126,15 @@ body {
   height: 100%;
   background: #000000;
 }
+.main .daojv {
+  width: 100%;
+  text-align: center;
+  font-size: 0.4rem;
+  color: #f27a5c;
+  padding-top: 1.86666667rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
 .main .show {
   position: absolute;
   width: 100%;
@@ -219,7 +228,7 @@ body {
 }
 .main .jdcd {
   background-size: cover;
-  top: -100%;
+  top: -150%;
 }
 .main .jdcd .jdcd_c {
   width: 100%;
@@ -251,7 +260,7 @@ body {
 }
 .main .jmjq {
   background-size: cover;
-  top: -100%;
+  top: -150%;
 }
 .main .jmjq .jmjq_c {
   width: 100%;
@@ -308,7 +317,7 @@ body {
 }
 .main .wmfz {
   background-size: cover;
-  top: -100%;
+  top: -150%;
 }
 .main .wmfz .wmfz_c {
   width: 100%;
@@ -387,7 +396,7 @@ body {
 .main .zczy {
   background-size: cover;
   min-height: 670px;
-  top: -100%;
+  top: -150%;
 }
 .main .zczy .zczy_c {
   width: 100%;
