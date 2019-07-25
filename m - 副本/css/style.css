@@ -130,6 +130,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
   left: 0;
 }
 .main .show .des {
@@ -166,60 +167,9 @@ body {
     top: 120px;
   }
 }
-.main .big {
-  width: 100%;
-  height: 100%;
-  background: url(../images/big_bg.jpg) no-repeat center top;
-  background-size: cover;
-}
-.main .big .meng {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-}
-.main .big .djkd_b {
-  position: absolute;
-  top: 3.73333333rem;
-  width: 2.64rem;
-  left: 50%;
-  margin-left: -1.33333333rem;
-}
-.main .big .djkd_b img {
-  width: 100%;
-}
-.main .big .navbar {
-  display: none;
-}
-.main .big .navbar li {
-  position: absolute;
-  width: 2.64rem;
-}
-.main .big .navbar li img {
-  width: 100%;
-}
-.main .big .navbar li:nth-of-type(1) {
-  top: 8.66666667rem;
-  right: 0.53333333rem;
-}
-.main .big .navbar li:nth-of-type(2) {
-  top: 8.66666667rem;
-  left: 1.86666667rem;
-}
-.main .big .navbar li:nth-of-type(3) {
-  top: 5.46666667rem;
-  left: 50%;
-  margin-left: -1.33333333rem;
-}
-.main .big .navbar li:nth-of-type(4) {
-  top: 12rem;
-  right: 0.8rem;
-}
 .main .jdcd {
+  background: url(../images/jdcd_bg.jpg) no-repeat center;
   background-size: cover;
-  top: -100%;
 }
 .main .jdcd .jdcd_c {
   width: 100%;
@@ -250,8 +200,8 @@ body {
   text-indent: 0.8rem;
 }
 .main .jmjq {
+  background: url(../images/jmjq_bg.jpg) no-repeat center;
   background-size: cover;
-  top: -100%;
 }
 .main .jmjq .jmjq_c {
   width: 100%;
@@ -307,8 +257,8 @@ body {
   text-align: justify;
 }
 .main .wmfz {
+  background: url(../images/wmfz_bg.jpg) no-repeat center;
   background-size: cover;
-  top: -100%;
 }
 .main .wmfz .wmfz_c {
   width: 100%;
@@ -385,9 +335,9 @@ body {
   bottom: 44px;
 }
 .main .zczy {
+  background: url(../images/zczy_bg.jpg) no-repeat center;
   background-size: cover;
   min-height: 670px;
-  top: -100%;
 }
 .main .zczy .zczy_c {
   width: 100%;
