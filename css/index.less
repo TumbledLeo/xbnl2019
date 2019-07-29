@@ -150,6 +150,12 @@ html,body{
       left:210px;
       bottom:10px;
     }
+    .bar7{
+      position: absolute;
+      right: 490px;
+        top: 500px;
+    }
+    
   }
 }
 .wrap{
@@ -225,23 +231,24 @@ html,body{
       right:30px;
       width:40px;
       height:40px;
+      z-index:3;
     }
     .des{
       opacity:0;
       position: absolute;
-      top:200px;
-      width:920px;
+      top:180px;
+      width:960px;
       left:50%;
-      margin-left:-460px;
+      margin-left:-480px;
       line-height:60px;
       ol{
         width:430px;
         display: flex;
         justify-content: space-between;
-        margin:0 auto;
+        margin:0 auto 20px;
        li{
          text-align: center;
-         width:94px;
+       
          a{
           font-size: 24px;
           color:#ea7659;
@@ -259,6 +266,15 @@ html,body{
           color:#ea7659;
           font-weight: normal;
           line-height: 45px;
+        }
+        h4{
+          font-size: 18px;
+          letter-spacing: 2px;
+          color:#ea7659;
+          font-weight: normal;
+          line-height: 30px;
+          width: 100%;
+          text-align: center;
         }
         p{
           text-indent: 2em;
@@ -452,4 +468,19 @@ html,body{
   .show{
     display:none;
   }
+}
+.scroll_wrap{
+  height:480px;
+.scroll_slider {
+  left: -1px;
+  width: 8px;
+  border-radius: 5px;
+  opacity: 1;
+    background-color: #82311d;
+   
+}
+.scroll_bar {
+  background-color: #f27a5c;
+  border-radius: 20px;
+}
 }

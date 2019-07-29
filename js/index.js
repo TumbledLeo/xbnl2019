@@ -82,12 +82,12 @@ function tabCtrl(ele) {
         $(ele + ' .tabContents .tabContent').hide().eq(index).fadeIn();
     });
 }
-tabCtrl('.m_jmjq');
 
 tabCtrl('.m_wmfz');
 
 tabCtrl('.m_zczy');
 
+  tabCtrl('.m_jmjq');
 // 导航
 $('.bar li.icon').click(function(){
     $('.nav li').eq($(this).index()).addClass('active').siblings().removeClass('active');
@@ -122,4 +122,5 @@ $('.close').click(function(){
     }
     
   });
+  
 });
