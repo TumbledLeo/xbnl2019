@@ -5,7 +5,7 @@ body{
   font-family: PingFang-SC-Heavy;
  
 }
-a{
+a,li{
   -webkit-tap-highlight-color:transparent;
 }
 // @media (width: 320px) {
@@ -213,13 +213,23 @@ height:100%;
     }
     .dp{
       position: absolute;
-      top:12rem;
-      width:198rem/75;
+      top:10rem;
+      width:220rem/75;
+      height:4rem;
       left:50%;
-      margin-left: -3.3rem;
+      margin-left: -4.5rem;
       display:none;
+      a{
+        width:198rem/75;
+        height:4rem;
+        position: absolute;
+        top: 0rem;
+        right:0;
+      }
       img{
-        width:100%;
+        width:198rem/75;
+        position: absolute;
+        bottom:0;
       }
     }
     .navbar{
@@ -227,25 +237,31 @@ height:100%;
       li{
       position: absolute;
       width:198rem/75;
+      height:3rem;
       img{
         width:100%;
+        position: absolute;
+        top: 2.4rem;
       }
       }
-      li:nth-of-type(1){
-        top:650rem/75;
+      li:nth-of-type(3){
+        top:500rem/75;
         right:40rem/75;
       }
       li:nth-of-type(2){
-        top:650rem/75;
-        left:140rem/75;
+        top:450rem/75;
+        left:40rem/75;
+        img{
+          top:3rem;
+        }
       }
-      li:nth-of-type(3){
+      li:nth-of-type(1){
         top:410rem/75;
         left:50%;
         margin-left: -100rem/75;
       }
       li:nth-of-type(4){
-        top:900rem/75;
+        top:10rem;
         right:60rem/75;
       }
     }

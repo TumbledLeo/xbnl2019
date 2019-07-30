@@ -4,7 +4,8 @@ body {
   overflow-x: hidden;
   font-family: PingFang-SC-Heavy;
 }
-a {
+a,
+li {
   -webkit-tap-highlight-color: transparent;
 }
 .music.play {
@@ -156,14 +157,24 @@ body {
 }
 .main .big .dp {
   position: absolute;
-  top: 12rem;
-  width: 2.64rem;
+  top: 10rem;
+  width: 2.93333333rem;
+  height: 4rem;
   left: 50%;
-  margin-left: -3.3rem;
+  margin-left: -4.5rem;
   display: none;
 }
+.main .big .dp a {
+  width: 2.64rem;
+  height: 4rem;
+  position: absolute;
+  top: 0rem;
+  right: 0;
+}
 .main .big .dp img {
-  width: 100%;
+  width: 2.64rem;
+  position: absolute;
+  bottom: 0;
 }
 .main .big .navbar {
   display: none;
@@ -171,25 +182,31 @@ body {
 .main .big .navbar li {
   position: absolute;
   width: 2.64rem;
+  height: 3rem;
 }
 .main .big .navbar li img {
   width: 100%;
+  position: absolute;
+  top: 2.4rem;
 }
-.main .big .navbar li:nth-of-type(1) {
-  top: 8.66666667rem;
+.main .big .navbar li:nth-of-type(3) {
+  top: 6.66666667rem;
   right: 0.53333333rem;
 }
 .main .big .navbar li:nth-of-type(2) {
-  top: 8.66666667rem;
-  left: 1.86666667rem;
+  top: 6rem;
+  left: 0.53333333rem;
 }
-.main .big .navbar li:nth-of-type(3) {
+.main .big .navbar li:nth-of-type(2) img {
+  top: 3rem;
+}
+.main .big .navbar li:nth-of-type(1) {
   top: 5.46666667rem;
   left: 50%;
   margin-left: -1.33333333rem;
 }
 .main .big .navbar li:nth-of-type(4) {
-  top: 12rem;
+  top: 10rem;
   right: 0.8rem;
 }
 .main .jdcd {
