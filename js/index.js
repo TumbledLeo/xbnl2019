@@ -39,7 +39,7 @@ $(function(){
         $('.music_bg').removeClass('play');
 
         $('.more_audio li').removeClass('active');
-       
+   
         music.pause();
         music1.pause();
         music2.pause();

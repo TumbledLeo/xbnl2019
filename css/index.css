@@ -194,19 +194,28 @@ body {
 .inner .m_jdcd .des {
   opacity: 0;
 }
-.inner .m_jdcd ul {
-  position: absolute;
+.inner .m_jdcd .ul {
+  position: relative;
   top: 270px;
   left: 106px;
   line-height: 60px;
+  width: 870px;
 }
-.inner .m_jdcd ul li span {
+.inner .m_jdcd .ul ul p {
+  width: 800px;
+  color: #ea7659;
+  line-height: 40px;
+  font-size: 18px;
+  text-indent: 2em;
+  text-align: justify;
+}
+.inner .m_jdcd .ul li span {
   display: inline-block;
   cursor: pointer;
   width: 46px;
   height: 46px;
 }
-.inner .m_jdcd ul li p {
+.inner .m_jdcd .ul li p {
   font-size: 24px;
   color: #ea7659;
   line-height: 76px;
@@ -215,7 +224,7 @@ body {
   background: url(../images/video_icon.png) no-repeat left center;
   cursor: pointer;
 }
-.inner .m_jdcd ul li.active p {
+.inner .m_jdcd .ul li.active p {
   background: url(../images/video_icon1.png) no-repeat left center;
 }
 .inner .m_jmjq {

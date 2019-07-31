@@ -37,9 +37,8 @@ $(function(){
         music.pause();
         $('.music_bg').find('img').attr("src","images/play.png");
         $('.music_bg').removeClass('play');
-
         $('.more_audio li').removeClass('active');
-        
+  
         music.pause();
         music1.pause();
         music2.pause();
@@ -47,8 +46,8 @@ $(function(){
         music4.pause();
         music5.pause();
         music6.pause();
-       
-        
+     
+//alert($(this).index());
         if($(this).index()==0){
             if(open0){
                 music1.play();
@@ -60,7 +59,7 @@ $(function(){
                 open0=true;
             }
             
-        }else if($(this).index()==1){
+        }else if($(this).index()==2){
             if(open1){
                 music2.play();
                 $(this).addClass('active');
@@ -71,7 +70,7 @@ $(function(){
                 open1=true;
             }
             console.log(2);
-        }else if($(this).index()==2){
+        }else if($(this).index()==4){
             if(open2){
                 music3.play();
                 $(this).addClass('active');
@@ -82,7 +81,7 @@ $(function(){
                 open2=true;
             }
             console.log(3);
-        }else if($(this).index()==3){
+        }else if($(this).index()==6){
             if(open3){
                 music4.play();
                 $(this).addClass('active');
@@ -93,7 +92,7 @@ $(function(){
                 open3=true;
             }
             console.log(4);
-        }else if($(this).index()==4){
+        }else if($(this).index()==8){
             if(open4){
                 music5.play();
                 $(this).addClass('active');
@@ -104,7 +103,7 @@ $(function(){
                 open4=true;
             }
             console.log(5);
-        }else if($(this).index()==5){
+        }else if($(this).index()==10){
             if(open5){
                 music6.play();
                 $(this).addClass('active');

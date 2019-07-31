@@ -235,7 +235,7 @@ body {
   background: url(../images/video_icon1.png) no-repeat left;
   background-size: 0.61333333rem;
 }
-.main .jdcd .jdcd_c .more p {
+.main .jdcd .jdcd_c .more li p {
   font-size: 0.4rem;
   color: #ea7659;
   line-height: 1.46666667rem;
@@ -554,7 +554,7 @@ body {
   margin: 0 auto ;
 }
 #wrapper ul {
-  height: 40rem;
+  height: 37.33333333rem;
 }
 #wrapper ul li h5 {
   line-height: 0.8rem;
@@ -570,7 +570,7 @@ body {
 .iScrollVerticalScrollbar {
   background: #f27a5c;
   width: 4px;
-  height: 9.86666667rem;
+  height: 9.6rem;
   position: absolute;
   right: 4px;
   top: 0;
@@ -580,4 +580,25 @@ body {
   height: 40px;
   width: 6px;
   background: #82311d;
+}
+#wrapper4 {
+  position: relative;
+  overflow: hidden;
+  height: 9.33333333rem;
+  width: 8.8rem;
+  margin: 0 auto ;
+}
+#wrapper4 p {
+  font-size: 0.34666667rem;
+  color: #ea7659;
+  line-height: 0.66666667rem;
+  text-indent: 2em;
+  width: 96%;
+  margin: 0 auto;
+}
+#wrapper4 li p {
+  font-size: 0.4rem;
+  line-height: 1.46666667rem;
+  text-indent: 0.8rem;
+  width: 100%;
 }
